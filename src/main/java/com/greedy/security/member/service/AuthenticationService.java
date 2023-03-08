@@ -10,7 +10,9 @@ public class AuthenticationService implements UserDetailsService {
 
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		// TODO Auto-generated method stub
+		
+		System.out.println("username : " + username);
+		
 		return null;
 	}
 
