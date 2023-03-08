@@ -13,3 +13,20 @@ spring:
 # mybatis config
 mybatis:
   mapper-locations: mappers/**/*.xml
+  
+# log level 
+logging:
+  level:
+# root level - 전역 설정
+    root: info
+# package level - 지역 설정
+    '[com.greedy.security.member.service]': trace
+  
+  
+  
+  
+  
+  
+  
+  
+  
