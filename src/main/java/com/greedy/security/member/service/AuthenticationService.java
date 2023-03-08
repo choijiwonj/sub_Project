@@ -6,6 +6,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+import com.greedy.security.member.model.dao.MemberMapper;
 import com.greedy.security.member.model.dto.MemberDTO;
 
 import lombok.extern.slf4j.Slf4j;
@@ -16,6 +17,12 @@ public class AuthenticationService implements UserDetailsService {
 	
 	//private static final Logger log = LoggerFactory.getLogger(AuthenticationService.class);
 
+	private final MemberMapper memberMapper;
+	
+	public AuthenticationService(MemberMapper memberMapper) {
+		this.memberMapper = memberMapper;
+	}
+	
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		
