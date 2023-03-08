@@ -1,6 +1,12 @@
 package com.greedy.security.member.service;
 
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -8,6 +14,7 @@ import org.springframework.stereotype.Service;
 
 import com.greedy.security.member.model.dao.MemberMapper;
 import com.greedy.security.member.model.dto.MemberDTO;
+import com.greedy.security.member.model.dto.MemberRoleDTO;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -51,7 +58,18 @@ public class AuthenticationService implements UserDetailsService {
 		/* 사용자 정의 타입으로 유저 조회 */
 		MemberDTO member = memberMapper.findMemberById(username);
 		
-		return null;
+		log.info("member : {}", member);
+		
+		/* 조회 된 값이 없을 시 처리 (아이디가 데이터베이스에 존재하지 않음) */
+		if(member == null) throw new UsernameNotFoundException("username not found");
+		
+		/* 권한 리스트 만들기 */
+		List<GrantedAuthority> authorities = new ArrayList<>();
+		for(MemberRoleDTO role : member.getMemberRoleList()) {
+			authorities.add(new SimpleGrantedAuthority(role.getAuthority().getName()));
+		}
+		
+		return new User(member.getId(), member.getPwd(), authorities);
 	}
 
 	
