@@ -43,3 +43,80 @@
     
 </body>
 </html>
+
+
+--------------------------------------------------------------
+
+@charset "UTF-8"; /* 인코딩 문자 깨짐 방지*/
+
+html{
+    position: relative;
+width: 1930px;
+height: 1083px;
+}
+
+
+
+
+
+.left{
+    position: absolute;
+left: 0%;
+right: 55.23%;
+top: 0%;
+bottom: 0%;
+
+background-image: url(../images/20230308_170437.png);
+
+background-size: cover;
+}
+.right{
+    position: absolute;
+    left: 62.33%;
+    right: 20.41%;
+    top: 6.09%;
+    bottom: 82.73%;
+    
+
+
+color: black
+}
+
+.right-subtitle{
+
+    position: absolute;
+left: 59.74%;
+right: 16.99%;
+top: 17.45%;
+bottom: 78.95%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 26px;
+line-height: 31px;
+
+color: rgba(126, 113, 113, 0.6);
+}
+
+.right-etc{
+    position: absolute;
+left: 64.61%;
+right: 22.54%;
+top: 93.91%;
+bottom: 3.42%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+
+color: rgba(169, 197, 185, 0.8);
+}
+
+
+
+
+
+
