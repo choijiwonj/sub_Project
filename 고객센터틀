@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객센터틀</title>
+    <link href="../resource/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="../resource/images/icons8-화분에-심은-식물-48 (1).png">
+    <link href="https://unpkg.com/ress/dist/ress.min.css" rel="stylesheet" type="text/css">
+ 
+
+
+</head>
+<body>
+    <div class="left">
+        <header>
+
+        </header>
+
+    </div>
+    <div class="right">
+        <div id="타이틀"><h1>타이틀</h1></div>
+            <div class="subtitle" id="sub타이틀">반갑습니다. 식물쇼핑몰 물뿌리개입니다.</div>
+        <nav>
+            <div class="midletitle" id="midletitle">
+                <h3>고객센터</h3>
+                <ul>
+                    <li>공지사항</li>
+                    <li>FAQ</li>
+                    <li>상품문의</li>
+                    <li>1:1문의</li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="etc" id="카피라이트">@Copyright 물뿌리개</div>
+            
+
+    </div>
+
+    
+</body>
+</html>
+
+
+--------------------------------------------------------------
+
+@charset "UTF-8"; /* 인코딩 문자 깨짐 방지*/
+
+html{
+    position: relative;
+width: 1930px;
+height: 1083px;
+}
+
+
+
+
+
+.left{
+    position: absolute;
+left: 0%;
+right: 55.23%;
+top: 0%;
+bottom: 0%;
+
+background-image: url(../images/20230308_170437.png);
+
+background-size: cover;
+}
+.right{
+    position: absolute;
+    left: 62.33%;
+    right: 20.41%;
+    top: 6.09%;
+    bottom: 82.73%;
+    
+
+
+color: black
+}
+
+.right-subtitle{
+
+    position: absolute;
+left: 59.74%;
+right: 16.99%;
+top: 17.45%;
+bottom: 78.95%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 26px;
+line-height: 31px;
+
+color: rgba(126, 113, 113, 0.6);
+}
+
+.right-etc{
+    position: absolute;
+left: 64.61%;
+right: 22.54%;
+top: 93.91%;
+bottom: 3.42%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+
+color: rgba(169, 197, 185, 0.8);
+}
+
+
+
+
+
+
