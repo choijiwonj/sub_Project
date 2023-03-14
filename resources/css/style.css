@@ -44,7 +44,7 @@ a {
 }
 
 .inner {
-    padding: 0 10%;
+    padding: 0 20%;
     display: flex;
     justify-content: space-between;
 }
@@ -87,10 +87,10 @@ a {
     display: flex;
     list-style-type: none;
     background-color: rgba(218, 233, 231, 0.8);
-    /* justify-content: space-evenly; */
-    justify-content: center;
+    justify-content: space-evenly;
+    /* justify-content: center; */
     padding: 10px;
-    margin: 20px 10%;
+    margin: 20px 20% 30px 20%;
     font-size: 14px;
 }
 
@@ -122,7 +122,7 @@ a {
 .wrap-om {
     background: rgba(126, 113, 113, 0.1);
     border-radius: 30px;
-    margin: 20px 10%;
+    margin: 30px 20%;
     height: 840px;
 }
 
@@ -144,7 +144,7 @@ a {
 
 .paging {
     text-align: center;
-    margin: 20px;
+    margin-bottom: 30px;
 }
 
 .paging button {
@@ -153,4 +153,21 @@ a {
     color: rgba(118, 141, 131, 0.8);
     font-size: 12px;
     font-weight: 700;
+}
+
+/* 결제 관리 페이지 */
+
+.select {
+    text-align: right;
+    margin: 20px;
+}
+
+.comp {
+    color: rgba(126, 113, 113, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 0;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 8px;
 }

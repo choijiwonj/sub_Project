@@ -1,0 +1,109 @@
+
+*{padding:0;margin:0}
+li{list-style:none}
+a{text-decoration:none;font-size:14px}
+
+.menu {
+    width: 800px;
+    overflow: hidden;
+    /* margin: 50px; */
+}
+
+.menu > li {
+    width: 20%; 
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    background-color: #c2ceff;
+}
+
+.menu a {
+    /* border: solid 1px black; */
+}
+
+/* 밑에 색상 더 진해지는거 */
+.submenu > li {
+    line-height: 50px;
+    background-color: #94a9ff;
+}
+
+.submenu {
+    height: 0; 
+    /*ul의 높이를 안보이게 처리*/
+    overflow: hidden;
+}
+
+.menu > li:hover {
+    background-color: #94a9ff;
+    transition-duration: 0.5s;
+  }
+  
+.menu > li:hover .submenu {
+    height: 100px; /*서브메뉴 li한개의 높이 50*5*/
+    transition-duration: 1s;
+}
+
+.menu > li:hover .sub-menu .all {
+    height: 0;
+}
+
+/* ----------------------------------------------------------- */
+
+.sub-menu {
+    /* width: 800px; */
+    overflow: hidden;
+    /* margin: 50px; */
+    /* display: flex;
+    list-style-type: none;
+    background-color: rgba(218, 233, 231, 0.8);
+    justify-content: space-evenly;
+    padding: 10px;
+    font-size: 14px; */
+    margin: 20px 10% 30px 10%;
+}
+
+.sub-menu > li {
+    width: 20%;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgba(218, 233, 231, 0.8);
+}
+
+.sub-menu li a {
+    color: rgba(118, 141, 131, 0.7);
+    font-weight: 700;
+    padding: 0 20%;
+    /* border: solid 1px black; */
+}
+
+.detail-menu {
+    line-height: 50px;
+    background-color: rgba(118, 141, 131, 0.2);
+}
+
+.detail-menu {
+    height: 0;
+    overflow: hidden;
+}
+
+.sub-menu > li:hover {
+    color: white;
+    background-color: rgba(118, 141, 131, 0.2);
+    transition-duration: 0.5s;
+}
+
+.sub-menu > li:hover .detail-menu {
+    height: 100px;
+    transition-duration: 1s;
+}
+
+/* .sub-menu > li::before {
+    content: "|";
+    color: rgba(118, 141, 131, 0.7);
+    font-weight: 700;
+} */
+
+/* .sub-menu li:last-child::after{
+    content: "";
+} */
