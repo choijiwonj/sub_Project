@@ -97,20 +97,12 @@ a {
     display: inline-block;
 }
 
-.t1:hover{
-    color: rgba(71, 66, 66, 0.7);
-}
-
 .t2{
     font-family: 'TAEBAEKmilkyway';
     font-weight: bold;
     font-size : 20px;
     color: rgba(118, 141, 131, 0.7);
     display: inline-block;
-}
-
-.t2:hover{
-    color: rgba(71, 66, 66, 0.7);
 }
 
 /* background */
