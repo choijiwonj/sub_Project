@@ -8,7 +8,7 @@
     <link href="../resources/css/style.css" rel="stylesheet" style type="text/css">
     <link href="../resources/css/font.css" rel="stylesheet" style type="text/css">
 </head>
-<body>
+<div>
 
     <!-- header -->
 
@@ -47,76 +47,96 @@
         </div>
     </div>
 
-    <!-- 서브 메뉴바 -->
+    <div id="wrapper">
 
-    <ul class="sub-menu">
-        <li>
-            <a href="">전체</a>
-        </li>
-        <li>
-            <a href="">결제</a>
-        </li>
-        <li>
-            <a href="">배송</a>
-        </li>
-        <li>
-            <a href="">환불</a>
-        </li>
-        <li>
-            <a href="">교환</a>
-        </li>
-    </ul>
+        <!-- 서브 메뉴바 -->
+        
+        <ul class="sub-menu">
+            <li>
+                <a href="">전체</a>
+            </li>
+            <li>
+                <a href="">결제</a>
+                <ul class="detail-menu">
+                    <li><a href="#">결제 대기</a></li>
+                    <li><a href="#">결제 완료</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">배송</a>
+                <ul class="detail-menu">
+                    <li><a href="#">발송 대기</a></li>
+                    <li><a href="#">발송 완료</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">환불</a>
+                <ul class="detail-menu">
+                    <li><a href="#">환불 대기</a></li>
+                    <li><a href="#">환불 완료</a></li>
+                </ul>            
+            </li>
+            <li>
+                <a href="">교환</a>
+                <ul class="detail-menu">
+                    <li><a href="#">교환 대기</a></li>
+                    <li><a href="#">교환 완료</a></li>
+                </ul>            
+            </li>
+        </ul>
 
-    <!-- 전체 주문 타이틀 -->
+        <!-- 전체 주문 타이틀 -->
 
-    <div class="title">
-        <p>결제 대기</p>
-    </div>
-
-    <!-- 전체 주문관리 -->
-
-    <div class="wrap-om">
-        <div class="type">
-            <ul>
-                <li>주문날짜</li>
-                <li>주문번호</li>
-                <li>고객 ID</li>
-                <li>입금자명</li>
-                <li>상품번호</li>
-                <li>상품명</li>
-                <li>주문수량</li>
-                <li>주문금액</li>
-            </ul>
+        <div class="title">
+            <p>결제 대기</p>
         </div>
 
-        <div class="list">
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
+        <!-- 전체 주문관리 -->
+
+        <div class="wrap-om">
+            <div class="type">
+                <ul>
+                    <li>주문날짜</li>
+                    <li>주문번호</li>
+                    <li>고객 ID</li>
+                    <li>입금자명</li>
+                    <li>상품번호</li>
+                    <li>상품명</li>
+                    <li>주문수량</li>
+                    <li>주문금액</li>
+                </ul>
+            </div>
+
+            <div class="list">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </div>
+
+            <div class="select">
+                <button class="comp">결제 완료</button>
+            </div>
+
         </div>
 
-        <div class="select">
-            <button class="comp">결제 완료</button>
+        <div></div>
+
+        <!-- 페이지 버튼 -->
+
+        <div class="paging">
+            <button>&lt;&lt;</button>
+            <button>&lt;</button>
+                
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+
+            <button>&gt;</button>
+            <button>&gt;&gt;</button>
         </div>
-
-    </div>
-
-    <div></div>
-
-    <!-- 페이지 버튼 -->
-
-    <div class="paging">
-		<button>&lt;&lt;</button>
-		<button>&lt;</button>
-            
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-
-		<button>&gt;</button>
-		<button>&gt;&gt;</button>
+    
     </div>
 
     <!-- footer -->

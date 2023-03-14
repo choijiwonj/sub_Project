@@ -10,7 +10,7 @@ a{text-decoration:none;font-size:14px}
 }
 
 .menu > li {
-    width: 20%; 
+    /* width: 20%; */
     float: left;
     text-align: center;
     line-height: 40px;
@@ -36,16 +36,16 @@ a{text-decoration:none;font-size:14px}
 .menu > li:hover {
     background-color: #94a9ff;
     transition-duration: 0.5s;
-  }
+}
   
 .menu > li:hover .submenu {
     height: 100px; /*서브메뉴 li한개의 높이 50*5*/
     transition-duration: 1s;
 }
 
-.menu > li:hover .sub-menu .all {
+/* .menu > li:hover .sub-menu .all {
     height: 0;
-}
+} */
 
 /* ----------------------------------------------------------- */
 
@@ -59,7 +59,7 @@ a{text-decoration:none;font-size:14px}
     justify-content: space-evenly;
     padding: 10px;
     font-size: 14px; */
-    margin: 20px 10% 30px 10%;
+    margin: 20px 20% 30px 20%;
 }
 
 .sub-menu > li {
@@ -67,19 +67,23 @@ a{text-decoration:none;font-size:14px}
     float: left;
     text-align: center;
     line-height: 40px;
-    background-color: rgba(218, 233, 231, 0.8);
+    background-color: rgba(218, 233, 231, 0.6);
 }
 
 .sub-menu li a {
-    color: rgba(118, 141, 131, 0.7);
+    /* width: 100%; */
+    color: rgba(118, 141, 131, 0.8);
+    /* color: white; */
+    /* color: rgba(255, 255, 255, 0.8); */
     font-weight: 700;
-    padding: 0 20%;
+    padding: 10px 30%;
     /* border: solid 1px black; */
 }
 
 .detail-menu {
     line-height: 50px;
-    background-color: rgba(118, 141, 131, 0.2);
+    background-color: rgba(218, 233, 231, 0.8);
+    /* background-color: white; */
 }
 
 .detail-menu {
@@ -88,9 +92,18 @@ a{text-decoration:none;font-size:14px}
 }
 
 .sub-menu > li:hover {
-    color: white;
-    background-color: rgba(118, 141, 131, 0.2);
+    /* color: white; */
+    background-color: rgba(118, 141, 131, 0.4);
+    /* background-color: rgba(218, 233, 231, 0.8); */
+    /* background-color: rgba(255, 255, 255, 0.4); */
+    /* background-color: blue; */
     transition-duration: 0.5s;
+}
+
+.sub-menu > li a:hover {
+    /* color: rgba(255, 255, 255, 1); */
+    /* color: white; */
+    color: rgba(126, 113, 113, 0.8);;
 }
 
 .sub-menu > li:hover .detail-menu {
@@ -98,12 +111,3 @@ a{text-decoration:none;font-size:14px}
     transition-duration: 1s;
 }
 
-/* .sub-menu > li::before {
-    content: "|";
-    color: rgba(118, 141, 131, 0.7);
-    font-weight: 700;
-} */
-
-/* .sub-menu li:last-child::after{
-    content: "";
-} */

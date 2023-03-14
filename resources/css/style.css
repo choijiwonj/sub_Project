@@ -1,18 +1,24 @@
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-}
+*{padding:0;margin:0}
 
 a {
-    text-decoration: none;  /* 모든 하이퍼링크 밑줄 삭제 */
+    text-decoration: none;  
+    /* 모든 하이퍼링크 밑줄 삭제 */
+}
+
+li {
+    list-style:none;
+}
+
+body {
+    height: 100%;
+    background-color: white;
 }
 
 .main {
     text-align: center;
     font-family: 'HSBombaram21-Regular';
     font-weight: normal;
+    margin: 30px;
 }
 
 .main span {
@@ -49,14 +55,9 @@ a {
     justify-content: space-between;
 }
 
-.wrapper {
-    min-height: calc(100%-160px);
-    position: relative;
-} 
-
 .btm-holder {
     width: 100%;
-    padding: 20px;
+    /* padding: 20px; */
     /* position: fixed; */
     bottom: 0;
     /* left: 0; */
@@ -65,8 +66,9 @@ a {
 }
 
 .info {
+    margin: 20px;
     font-size: 12px;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
     color: rgba(118, 141, 131);
     /* float: none; */
     /* display: inline-block; */
@@ -74,55 +76,29 @@ a {
 }
 
 .copy {
-    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
     font-size: 12px;
     color: rgba(118, 141, 131);
     display: block;
 }
 
-/* 판매자 주문관리 */
+/* 서브 메뉴 */
 
-.sub-menu {
-    display: flex;
-    list-style-type: none;
-    background-color: rgba(218, 233, 231, 0.8);
-    justify-content: space-evenly;
-    /* justify-content: center; */
-    padding: 10px;
-    margin: 20px 20% 30px 20%;
-    font-size: 14px;
-}
 
-.sub-menu li a {
-    color: rgba(118, 141, 131, 0.7);
-    font-weight: 700;
-    padding: 0 50px;
-    /* border: solid 1px black; */
-}
-
-.sub-menu li::after {
-    content: "|";
-    color: rgba(118, 141, 131, 0.7);
-    font-weight: 700;
-}
-
-.sub-menu li:last-child::after{
-    content: "";
-  }
 
 .title p {
     color: rgba(118, 141, 131, 0.7);
     text-align: center;
     font-size: 16px;
     font-weight: 700;
-    margin: 0;
+    margin: 30px;
 }
 
 .wrap-om {
     background: rgba(126, 113, 113, 0.1);
     border-radius: 30px;
-    margin: 30px 20%;
+    margin: 0 20%;
     height: 840px;
 }
 
@@ -144,7 +120,7 @@ a {
 
 .paging {
     text-align: center;
-    margin-bottom: 30px;
+    margin: 30px;
 }
 
 .paging button {
@@ -159,7 +135,6 @@ a {
 
 .select {
     text-align: right;
-    margin: 20px;
 }
 
 .comp {
@@ -170,4 +145,5 @@ a {
     font-size: 12px;
     font-weight: 700;
     padding: 8px;
+    margin: 20px;
 }
