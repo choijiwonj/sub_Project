@@ -140,71 +140,56 @@ a {
 }
 
  /* New Product */
- .newProduct{
+ .bestProduct{
     text-align: center;
     margin-top: 600px;
     font-family: 'ONE-Mobile-POP';
  }
 
- .newProduct h1{
+ .bestProduct h1{
     color: rgba(126, 113, 113);
     opacity: 80%;
  }
 
- .newProduct h4{
+ .bestProduct h4{
     color: rgba(118, 141, 131);
     opacity: 90%;
     font-weight: 100;
  }
 
-.newProductPicture{
+.bestProductPicture{
     font-family: 'ONE-Mobile-POP';
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
- .newProductPicture div{
+ .bestProductPicture div{
     text-align: center;
     margin-left: 30px;
     display: inline-block;
  }
 
- .newProductPicture img{
+ .bestProductPicture img{
     width: 230px;
     height: 300px;
  }
 
- .newProductPicture .s1
+ .bestProductPicture .s1
  {
     color: rgba(126, 113, 113);
     opacity: 80%;
     font-size: 18px;
  }
 
- .newProductPicture .s2
+ .bestProductPicture .s2
  {
     color: rgba(126, 113, 113);
     opacity: 80%;
     font-size: 16px;
  }
 
- .newProductPicture .s3
- {
-    color: rgba(126, 113, 113);
-    opacity: 80%;
-    font-size: 16px;
-    text-decoration: line-through;
- }
-
- .newProductPicture .s4
- {
-    color: rgba(126, 113, 113);
-    opacity: 80%;
-    font-size: 16px;
- }
-
- .newProductPicture .s5
+ .bestProductPicture .s3
  {
     color: rgba(118, 141, 131);
     opacity: 90%;
