@@ -71,7 +71,7 @@ a {
 }
 
 .inner {
-    padding: 0px 20px;
+    padding: 0 20%;
     display: flex;
     justify-content: space-between;
 }
@@ -111,32 +111,48 @@ a {
 .wrapper
 {
     max-width: 1000px;
-    margin-top: 50px;
-    text-align: center;
     position: relative;
+    margin: auto;
 }
 
-.banner1
+.banner
 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    width: 1000px;
-    height: 450px;
-    display: inline-block;                                                                                                                                                                                   
+    left: 0px;
+    flex-shrink: 0;
+    transition: left 0.15s;
 }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .banner {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes banner {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes banner {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
 
-.banner2
-{
-    position: absolute;
-    width: 1000px;
-    height: 450px;
-    display: inline-block;
-}
-
-.banner1 img,
-.banner2 img
+.banner img
 {
     width:1000px;
     height:450px;
+    margin-top: 80px;
 }
 
  /* New Product */
