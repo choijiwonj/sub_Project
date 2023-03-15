@@ -125,25 +125,16 @@ a {
     height: 500px;
 }
 
-.store{
-    border-radius: 100%;
-    background: rgba(118, 141, 131, 0.3);
+.store img{
     height: 300px;
     width: 300px;
-    transform: translateY(30px);
-    margin-left: 30px;
-}
-
-.store img{
-    height: 200px;
-    width: 200px;
     transform: translateY(50px);
     margin-left: 50px;
 }
 
 .c1{
     color: rgba(71, 66, 66, 0.7);
-    margin-left: 30px;
+    margin-left: 90px;
     font-size: 20px;
     font-family: 'TAEBAEKmilkyway';
     font-weight: bold;
@@ -240,7 +231,7 @@ a {
     background-color: rgba(71, 66, 66, 0.7);
     color: white;
     border-radius: 30px;
-    margin-left: 90px;
+    margin-left: 140px;
     margin-top: 30px;
     width: 100px;
 }

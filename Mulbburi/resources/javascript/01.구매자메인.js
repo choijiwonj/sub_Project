@@ -5,10 +5,10 @@ function hello(){
 
     console.log(value);
 
-    $rsearch.addEventListener('onclick', () => {window.location.replace=`https://www.naver.com`});
+    $rsearch.addEventListener('click', () => {window.location.replace=`https://www.naver.com`});
 };
 
-window.onload = hello;
+hello();
 
 var slideIndex = 0;
 
@@ -27,5 +27,18 @@ function showSlides() {
     setTimeout(showSlides, 2000);
 }
 
-window.onload = showSlides;
+showSlides();
 
+function company(){
+    const $co1 = document.querySelector(".co1");
+    const $co2 = document.querySelector(".co2");
+    const $co3 = document.querySelector(".co3");
+    const $co4 = document.querySelector(".co4");
+
+    $co1.addEventListener("click", () => {location.href="../lecture/회사소개.html"});
+    $co2.addEventListener("click", () => {location.href="../lecture/개인정보방침.html"});
+    $co3.addEventListener("click", () => {location.href="../lecture/이용약관.html"});
+    $co4.addEventListener("click", () => {location.href="../"})
+}
+
+company();
