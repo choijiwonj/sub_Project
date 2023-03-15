@@ -28,19 +28,19 @@ a {
 
 .menu span {
     font-size: 18px;
-    font-weight: 100;
+    font-weight: bold;
     color: rgba(118, 141, 131, 0.7);
     margin-right: 10px;
-    font-family: 'ONE-Mobile-POP';
+    font-family: 'TAEBAEKmilkyway';
     /* color: blue; */
 }
 
 .side span {
-    font-size: 12px;
-    font-weight: 100;
+    font-size: 14px;
+    font-weight: bold;
     color: rgba(118, 141, 131, 0.7);
     margin-left: 10px;
-    font-family: 'ONE-Mobile-POP';
+    font-family: 'TAEBAEKmilkyway';
     /* color: blue; */    
 }
 

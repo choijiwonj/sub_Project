@@ -28,19 +28,19 @@ a {
 
 .menu span {
     font-size: 18px;
-    font-weight: 100;
+    font-weight: bold;
     color: rgba(118, 141, 131, 0.7);
     margin-right: 10px;
-    font-family: 'ONE-Mobile-POP';
+    font-family: 'TAEBAEKmilkyway';
     /* color: blue; */
 }
 
 .side span {
-    font-size: 12px;
-    font-weight: 100;
+    font-size: 14px;
+    font-weight: bold;
     color: rgba(118, 141, 131, 0.7);
     margin-left: 10px;
-    font-family: 'ONE-Mobile-POP';
+    font-family: 'TAEBAEKmilkyway';
     /* color: blue; */    
 }
 
@@ -55,17 +55,17 @@ a {
     height: 20px;
     border-radius: 10px;
     background-color: rgba(118, 141, 131, 0.7);
-    font-family: 'ONE-Mobile-POP';
+    font-family: 'TAEBAEKmilkyway';
     color: white;
     opacity: 80%;
-    font-weight: 100;
+    font-weight: bold;
     font-size: 12px;
 }
 
 #search{
-    font-family: 'ONE-Mobile-POP';
-    font-weight: 100;
-    font-size: 12px;
+    font-family: 'TAEBAEKmilkyway';
+    font-weight: bold;
+    font-size: 14px;
     width: 80px;
     text-align: center;
 }
@@ -160,7 +160,8 @@ a {
  .bestProduct{
     text-align: center;
     margin-top: 600px;
-    font-family: 'ONE-Mobile-POP';
+    font-family: 'TAEBAEKmilkyway';
+    font-weight: bold;
  }
 
  .bestProduct h1{
@@ -175,7 +176,8 @@ a {
  }
 
 .bestProductPicture{
-    font-family: 'ONE-Mobile-POP';
+    font-family: 'TAEBAEKmilkyway';
+    font-weight: bold;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
