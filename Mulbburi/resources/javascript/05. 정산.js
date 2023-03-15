@@ -17,4 +17,4 @@ function click(){
     })
 }
 
-window.onload = click;
+click();
