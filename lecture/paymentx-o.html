@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>payment</title>
+    <link href="../resources/css/header.css" rel="stylesheet" style type="text/css">
     <link href="../resources/css/style.css" rel="stylesheet" style type="text/css">
     <link href="../resources/css/font.css" rel="stylesheet" style type="text/css">
+    <link href="../resources/css/footer.css" rel="stylesheet" style type="text/css">
 </head>
 <div>
 
@@ -19,11 +21,11 @@
             <span>물뿌리개</span>
         </a>
     </h1>
+
     <div class="inner">
 
         <div class="menu">
             
-            <!-- <button>홈버튼</button> -->
             <a href="../" class="">
                 <span>홈</span>
             </a>
@@ -47,53 +49,55 @@
         </div>
     </div>
 
-    <div id="wrapper">
+    <!-- /header -->
 
-        <!-- 서브 메뉴바 -->
-        
-        <ul class="sub-menu">
+    <div class="wrapper">
+
+        <!-- 메뉴바 -->
+
+        <ul class="menu-bar">
             <li>
                 <a href="">전체</a>
             </li>
             <li>
-                <a href="">결제</a>
-                <ul class="detail-menu">
+                <a>결제</a>
+                <ul class="sub-menu">
                     <li><a href="#">결제 대기</a></li>
                     <li><a href="#">결제 완료</a></li>
                 </ul>
             </li>
             <li>
-                <a href="">배송</a>
-                <ul class="detail-menu">
+                <a>배송</a>
+                <ul class="sub-menu">
                     <li><a href="#">발송 대기</a></li>
                     <li><a href="#">발송 완료</a></li>
                 </ul>
             </li>
             <li>
-                <a href="">환불</a>
-                <ul class="detail-menu">
+                <a>환불</a>
+                <ul class="sub-menu">
                     <li><a href="#">환불 대기</a></li>
                     <li><a href="#">환불 완료</a></li>
                 </ul>            
             </li>
             <li>
-                <a href="">교환</a>
-                <ul class="detail-menu">
+                <a>교환</a>
+                <ul class="sub-menu">
                     <li><a href="#">교환 대기</a></li>
                     <li><a href="#">교환 완료</a></li>
                 </ul>            
             </li>
         </ul>
 
-        <!-- 전체 주문 타이틀 -->
+        <!-- 주문 관리 제목 -->
 
         <div class="title">
-            <p>결제 대기</p>
+            <p>결제 완료</p>
         </div>
 
-        <!-- 전체 주문관리 -->
+        <!-- 주문 관리 내용 -->
 
-        <div class="wrap-om">
+        <div class="wrap">
             <div class="type">
                 <ul>
                     <li>주문날짜</li>
@@ -106,40 +110,36 @@
                     <li>주문금액</li>
                 </ul>
             </div>
-
+            
             <div class="list">
                 <tr>
                     <td></td>
                     <td></td>
                     <td></td>
-                </tr>
-            </div>
 
-            <div class="select">
-                <button class="comp">결제 완료</button>
+                </tr>
             </div>
 
         </div>
 
-        <div></div>
-
-        <!-- 페이지 버튼 -->
+        <!-- 페이징 -->
 
         <div class="paging">
             <button>&lt;&lt;</button>
-            <button>&lt;</button>
+            <button>이전</button>
                 
             <button>1</button>
             <button>2</button>
             <button>3</button>
 
-            <button>&gt;</button>
+            <button>다음</button>
             <button>&gt;&gt;</button>
         </div>
-    
+
     </div>
 
     <!-- footer -->
+
     <div class="btm-holder">
         <div class="siteinfo">
             <div class="info">

@@ -1,113 +1,97 @@
+.wrapper{
+  width: 60vw;
+  margin: 0 auto;
+}
+
+.menu-bar {
+  /* width: 60%; */
+  /* margin: 30px 20%; */
+  display: flex;
+  justify-content: space-around;
+  /* justify-content: center; */
+  position: relative;
+  /* background-color: rgba(218, 233, 231, 0.6); */
+  border: 2px solid red;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+.menu-bar > li {
+  width: 20%;
+  border: 2px solid blue;
+  /* align-items: center; */
+}
+
+
+.menu-bar a {
+  /* width: 20%; */
+  padding: 0 10%;
+  color: rgba(118, 141, 131, 0.8);
+  font-size: 14px;
+  font-weight: 700;
+  border: 2px solid aqua;
+}
+
+#sub-menu > li {
+  float: left;
+  position: absolute;
+  /* border: 2px solid blue; */
+  /* width: 12%; */
+}
+
+.sub-menu li {
+  /* border: 2px solid blue; */
+  /* width: 20%; */
+}
+
+#sub-menu > li > a {
+  /* display: block; */
+  color: rgba(118, 141, 131, 0.8);
+  color: blue;
+  /* border: 2px solid red; */
+  /* width: 1000px; */
+}
+
+.menu {
+  width: 800px;
+  overflow: hidden;
+  margin: 150px auto;
+}
+
+.menu > li {
+  width: 20%; /*20*5=100%*/
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  background-color: #5778ff;
+}
+
+.menu a {
+  color: #fff;
+}
+
+.submenu > li {
+  line-height: 50px;
+  background-color: #94a9ff;
+}
+
+.submenu {
+  height: 0; /*ul의 높이를 안보이게 처리*/
+  overflow: hidden;
+}
 
 *{padding:0;margin:0}
 li{list-style:none}
 a{text-decoration:none;font-size:14px}
 
-.menu {
-    width: 800px;
-    overflow: hidden;
-    /* margin: 50px; */
-}
-
-.menu > li {
-    /* width: 20%; */
-    float: left;
-    text-align: center;
-    line-height: 40px;
-    background-color: #c2ceff;
-}
-
-.menu a {
-    /* border: solid 1px black; */
-}
-
-/* 밑에 색상 더 진해지는거 */
-.submenu > li {
-    line-height: 50px;
-    background-color: #94a9ff;
-}
-
-.submenu {
-    height: 0; 
-    /*ul의 높이를 안보이게 처리*/
-    overflow: hidden;
-}
-
 .menu > li:hover {
-    background-color: #94a9ff;
-    transition-duration: 0.5s;
+  background-color: #94a9ff;
+  transition-duration: 0.5s;
 }
-  
+
 .menu > li:hover .submenu {
-    height: 100px; /*서브메뉴 li한개의 높이 50*5*/
-    transition-duration: 1s;
-}
-
-/* .menu > li:hover .sub-menu .all {
-    height: 0;
-} */
-
-/* ----------------------------------------------------------- */
-
-.sub-menu {
-    /* width: 800px; */
-    overflow: hidden;
-    /* margin: 50px; */
-    /* display: flex;
-    list-style-type: none;
-    background-color: rgba(218, 233, 231, 0.8);
-    justify-content: space-evenly;
-    padding: 10px;
-    font-size: 14px; */
-    margin: 20px 20% 30px 20%;
-}
-
-.sub-menu > li {
-    width: 20%;
-    float: left;
-    text-align: center;
-    line-height: 40px;
-    background-color: rgba(218, 233, 231, 0.6);
-}
-
-.sub-menu li a {
-    /* width: 100%; */
-    color: rgba(118, 141, 131, 0.8);
-    /* color: white; */
-    /* color: rgba(255, 255, 255, 0.8); */
-    font-weight: 700;
-    padding: 10px 30%;
-    /* border: solid 1px black; */
-}
-
-.detail-menu {
-    line-height: 50px;
-    background-color: rgba(218, 233, 231, 0.8);
-    /* background-color: white; */
-}
-
-.detail-menu {
-    height: 0;
-    overflow: hidden;
-}
-
-.sub-menu > li:hover {
-    /* color: white; */
-    background-color: rgba(118, 141, 131, 0.4);
-    /* background-color: rgba(218, 233, 231, 0.8); */
-    /* background-color: rgba(255, 255, 255, 0.4); */
-    /* background-color: blue; */
-    transition-duration: 0.5s;
-}
-
-.sub-menu > li a:hover {
-    /* color: rgba(255, 255, 255, 1); */
-    /* color: white; */
-    color: rgba(126, 113, 113, 0.8);;
-}
-
-.sub-menu > li:hover .detail-menu {
-    height: 100px;
-    transition-duration: 1s;
-}
-
+  height: 250px; /*서브메뉴 li한개의 높이 50*5*/
+  transition-duration: 1s;
